@@ -13,7 +13,7 @@
     <div id="box">
         <!-- 導覽列 放LOGO 分頁連結 有語意 -->
         <nav>
-           <a href="index.html">蛋糕店</a>
+           <a href="index.html" id="logo">蛋糕店</a>
             <div>
                 <a href="#">關於我</a>
                 <a href="#">故事</a>
@@ -21,25 +21,26 @@
             </div>
         </nav>
         <!-- 區塊元素 標題 內文 按鈕 有語意 -->
-        <section>
+        <section id="content">
             <h1>歡迎來到蛋糕店</h1>
             <p>Lorem ipsum dolor sit amet.</p>
             <a href="#">前往購買</a>
             <hr>
 
-        </section>
+        </section >
         <!-- 圖片按鈕區塊 -->
-        <section>
+        <section id="button">
             <!-- (a[href="#"]>img)*3  ALT=替代文字 -->
-            <a href="#"><img src="person.png" alt="關於我"></a>
-            <a href="#"><img src="cake.png" alt="故事"></a>
+            <a href="#"class="button-mr"><img src="person.png" alt="關於我"></a>
+            <a href="#"class="button-mr"><img src="cake.png" alt="故事"></a>
             <a href="#"><img src="phone.png" alt="聯絡我"></a>
         </section>
 
-        <!-- 頁尾 -->
-        <footer>
-            蛋糕店 &copy; 2019
-        </footer>
     </div>    
+    <!-- 頁尾 -->
+    <!-- 多行程式換行 複選 按住ALT+上下 -->
+    <footer>
+        蛋糕店 &copy; 2019
+    </footer>
 </body>
 </html>

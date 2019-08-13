@@ -1,14 +1,120 @@
 
-#box{
-    /* background-color: rgba(0,0,0,0.3); */
-    height: 500px;
-}
 
 body {
     /* 高度 */
     height: 100px;
     /* BGI 背景圖片 */
-    background-image: url("https://images.unsplash.com/photo-1488474339733-16a5dd4ba5e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+    background-image: url("https://images.unsplash.com/photo-1488474339733-16a5dd4ba5e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1036&q=80");
     /* BGS背景圖片大小 COVER 滿版*/
     background-size: cover;
+}
+
+/* 所有元素 */
+*{
+    /* bd 邊框 */
+    /* border: 0.5px solid rgba(255,0,0,0.3); */
+    /* 自型 */
+    font-family: 微軟正黑體;
+    /* 字體顏色 C#XXX */
+    color: #181717;
+    margin: 0;
+    padding: 0;
+}
+
+/* 盒子區塊 */
+#box{
+    /* background-color: rgba(0,0,0,0.3); */
+    height: 500px;
+    width: 900px;
+    /* 外距:上右下左 */
+    margin: 50px auto 0 auto; 
+}
+
+/* 導覽列 */
+#logo{
+    /* 文字大小 fz2e E=兩倍大小 */
+    font-size: 2em;
+}
+
+nav a {
+    /* 文字邊框底線 bdb  */
+    border-bottom: 1.5px solid #ffffff;
+    /* 內距 p */
+    padding: 10px 0;
+
+}
+
+nav a:hover {
+    background-color: rgba(99, 97, 97, 0.2);
+}
+
+a {
+    /* 文字裝飾 td */
+    text-decoration: none;
+}
+/* nav 裡面的 DIV */
+nav div{
+    /* 浮動:靠右 FLR */
+    float: right;
+
+}
+/* 內容區塊 */
+#content{
+   
+    width: 100%;
+    margin-top: 100px;
+}
+
+#content a {
+    border: 0.5px solid #fff;
+    padding: 0.5px 5px;
+    background-color: rgba(99, 97, 97, 0.2);
+}
+
+#content a:hover {
+
+    background-color: rgba(99, 97, 97, 0);
+}
+
+/* 按鈕區塊 */
+#button {
+    text-align: center;
+}
+
+#button a{
+    border: 0.5px solid #fff;
+    padding: 30px;
+    background-color: rgba(99, 97, 97, 0.2);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    /* 行內區塊 dib */
+    display: inline-block;
+    margin-top: 90px;
+
+}
+
+#button a.button-mr {
+    margin-right: 100px;
+}
+
+#button a img{
+    /* 寬度 */
+    width: 100%;
+}
+
+#button a:hover {
+    background-color: rgba(99, 97, 97, 0);
+}
+
+footer {
+    background-color: rgba(99, 97, 97, 0.2);
+    /* 定位:固定 PSF */
+    position: fixed;
+    /* 底部距離 0 B0 */
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
 }
